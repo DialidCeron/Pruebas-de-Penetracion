@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #Cerón Rodríguez Lezly Dialid
-
+#Crea un directorio donde descarga los archivos de la lista, crea al final el archivo reporte que contiene los metadatos agrupados
 import os
 import re
 
@@ -11,10 +11,10 @@ companies = []
 modifiedby = []
 modifydate = []
 filesname = []
-#os.system("mkdir wget")
-#os.system("cd wget")
-#os.system("for archivo in $(cat ../enlacesdoc); do sudo wget $archivo; done")
-#os.system("exiftool . >> salida")
+os.system("mkdir wget")
+os.system("cd wget")
+os.system("for archivo in $(cat ../enlacesdoc); do sudo wget $archivo; done")
+os.system("exiftool . >> salida")
 f = open("salida", "r")
 lines = f.readlines()
 
