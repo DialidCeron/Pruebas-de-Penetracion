@@ -3,4 +3,4 @@
 ## Plan de Becarios de Seguridad Informática UNAM CERT
 ## Cerón Rodríguez Lezly Dialid
 
-### Nota: Olvidé ponerle que reciba la lista de enlaces como argumento, se debe llamar enlacesdoc en mi código, en un momento lo corrijo
+### Programa que a partir de una lista de enlaces descarga los archivos correspondientes y genera un reporte de los metadatos. Uso: ./wget_enlaces.py lista
