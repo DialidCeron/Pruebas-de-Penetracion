@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Hacking without a computer" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1596409244.18" ts_lastsave="1596409766.71" unique_id="1">
+		<rich_text>- By Johny Long.
+- Don't make things difficult for yourself. Muchas cosas son muchos mas obvias de lo que parecen. Y muchas veces es necesario no solo la habilidad tecnica sino tambien el sentido comun. Hackear es tambien una manera de pensar y de ver las cosas. 
+- Social Engineering. Se pueden lograr muchas cosas explorando lo suficiente de las personas, y aprendiendo habilidades blandas :)
+- Information Gathering. La recoleccion de informacion sobre cualquier objetivo es de los pasos mas importantes cuando de hackear algo se trata. Mientras mas informacion tengas sobre tu objetivo, mejor. 
+- Electronic deduction. Se pueden hacer varias deducciones viendo el escritorio de la computadora de una persona.
+- Sucking sensitive data from a corporate network from the parking lot. Muchas empresas o personas dejan informacion en los papeles que tiran a la basura :)
+- Physical Security. Los controles de seguridad fisica son muchas veces facilmente by-passeables, lo mismo pasa con los controles de seguridad logica. </rich_text>
+	</node>
+</cherrytree>
