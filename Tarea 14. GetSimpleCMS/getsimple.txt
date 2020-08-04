@@ -1,0 +1,31 @@
+Vulnerabilidad CVE-2019-11231
+
+Permite a un atacante no autenticado realizar Ejecución Remota de Código.
+
+Utilizamos el exploit creado por truerand0m, se puede encontrar en metasploit, para la explotación de
+esta vulnerabilidad. 
+
+Sistemas afectados: GetSimple CMS versión 3.3.15
+
+Una sanitización ineficiente que se encuentra en theme-edit.php permite subir archivos con 
+contenido arbitrario (código PHP por ejemplo). Esta vulnerabilidad puede ser desencadenada por un usuario
+autenticado, aunque dicha autenticación puede ser bypasseada.
+
+Obtentiendo la API key y el nombre de usuario admin se puede bypassear la autenticación.
+Para eso es necesario suplir a la cookie con dichos datos. 
+
+Esta vulnerabilidad existe en el admin/theme-edit.php. Este archivo revisa los formularios enviados
+via POST y el CSRF nonce pasado. Si el nonce enviado es correcto entonces el archivo provisto por el
+usuario es subido. 
+
+El otro problema es que no hay otra forma de checar la extensión antes de guardar el archivo. 
+El archivo se sube bajo el supuesto de que el parámtetro 'content' es seguro. Esto permite 
+la creación de una web accesible y archivos ejecutables con contenido arbitrario. 
+
+Cómo mitigar las vulnerabilidades:
+- Sanitizar correctamente las variables en theme-edit.php de forma que no sea posible subir archivos con 
+contenido arbitrario.
+- Revisar el contenido de los archivos subidos. 
+- Verificar la extensión de los archivos subidos.
+- En cuanto a la autenticación, la opción podría ser usar otro método de autenticación, restringir el acceso
+a las variables API-key o cambiar la forma en que password y nombre de usuario son verificados. No usar el nombre de usuario admin.
